@@ -1,0 +1,33 @@
+Chicken nuggets: -- Something
+  Heated vegatble oil:
+    Vegetable oil
+
+    -- Something else
+    'Heat oil'
+    "Do other stuff"
+    "One more thing"
+
+  Coated chicken:
+    1 egg
+
+    Seasond chicken:
+      Chicken breast: "Cut into byte-sized pieces" "Verify size"
+      Oregano
+      Dashes of Paprika
+
+      "Marinate with paprika and lightly crushed oregano"
+
+    Crumb mixture:
+      1 roll Ritz crackers
+      Parmesan
+      Garlic salt
+      Black pepper
+
+      "Mix well"
+
+    "Dredge pieces of chicken in the egg"
+    "Shake off excess"
+
+  "Deep fry until golden brown"
+  "Don't overcook. Yuck!"
+
