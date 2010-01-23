@@ -70,6 +70,7 @@ nameP = p <?> "name"
                t <- many $ alphaNum <|> oneOf [' ', '_', '/', ',', '(', ')', '~']
                return $ h : t
 
+-- This is complicated to let ' or " be used
 stringP = p <?> "string"
     where p = do q <- oneOf "'\""
                  s <- many $ noneOf $ q:"\n\t"
