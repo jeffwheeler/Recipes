@@ -12,7 +12,7 @@ parseFile filename = do
     Left err -> Left  $ show err
     Right s  -> Right $ s
 
-recipeP = do newlines
+recipeP = do optional $ newlines
              r <- indentedRecipeP ""
              eof
              return r
@@ -64,7 +64,6 @@ newlines = many1 $ try $ do
     string "--"
     many $ noneOf "\n" 
   newline
-
 
 nameP = p <?> "name"
   where p = do h <- alphaNum <|> char '~' -- Let names start with ~
