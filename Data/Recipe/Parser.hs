@@ -6,10 +6,11 @@ import Text.Parsec.Token
 
 import Data.Recipe.Structure
 
-f filename = do
-  r <- parseFromFile recipeP filename
-  case  r of Left err -> print err
-             Right xs -> writeFile "/home/jeff/Desktop/recipe.html" (recipeGraph xs)
+parseFile filename = do
+  p <- parseFromFile recipeP filename
+  return $ case p of
+    Left err -> Left  $ show err
+    Right s  -> Right $ s
 
 recipeP = do newlines
              r <- indentedRecipeP ""
