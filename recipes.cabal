@@ -21,6 +21,8 @@ Build-depends: containers
 Build-depends: html
 Build-depends: parsec >= 3
 
+Ghc-options:   -Wall
+
 Exposed-modules:
     Data.Recipe.Parser
     Data.Recipe.Structure
