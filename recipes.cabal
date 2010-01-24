@@ -1,0 +1,27 @@
+Name:          recipes
+Version:       0.0.1
+Synopsis:      Parse and play with recipes using a simple DSL.
+Category:      Data
+Description:
+    This library includes a parser that reads a simple YAML-like,
+    domain-specific recipe language and represents recipes internally with a
+    simple tree structure. This tree structure can be printed to an HTML table,
+    like those used below the recipes on Cooking for Engineers.
+
+License:       BSD3
+License-file:  LICENSE
+
+Author:        Jeff Wheeler
+Maintainer:    jeffwheeler@gmail.com
+
+Build-type:    Simple
+
+Build-depends: base >= 4 && < 5
+Build-depends: containers
+Build-depends: html
+Build-depends: parsec >= 3
+
+Exposed-modules:
+    Data.Recipe.Parser
+    Data.Recipe.Structure
+
