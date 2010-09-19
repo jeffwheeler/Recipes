@@ -14,15 +14,25 @@ Author:        Jeff Wheeler
 Maintainer:    jeffwheeler@gmail.com
 
 Build-type:    Simple
+Cabal-version: >= 1.2
 
-Build-depends: base >= 4 && < 5
-Build-depends: containers
-Build-depends: html
-Build-depends: parsec >= 3
+Library
+  Ghc-options:    -Wall
+  Hs-source-dirs: src
 
-Ghc-options:   -Wall
+  Build-depends:  base >= 4 && < 5
+  Build-depends:  containers
+  Build-depends:  html
+  Build-depends:  parsec >= 3
 
-Exposed-modules:
-    Data.Recipe.Parser
-    Data.Recipe.Structure
+  Exposed-modules:
+      Data.Recipe.Parser
+      Data.Recipe.Structure
 
+Executable recipestable
+  Ghc-options:    -Wall
+  Hs-source-dirs: src
+
+  Build-depends:  filepath
+
+  Main-is:        Main.hs
