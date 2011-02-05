@@ -1,0 +1,21 @@
+Name:          recipes-web
+Version:       0.0.1
+Synopsis:      Host a recipes-based site
+Category:      Web
+
+License:       BSD3
+
+Author:        Jeff Wheeler
+Maintainer:    jeffwheeler@gmail.com
+
+Build-type:    Simple
+Cabal-version: >= 1.2
+
+Executable recipesweb
+  Ghc-options:    -Wall
+  Hs-source-dirs: src
+
+  Build-depends:  base >= 4 && < 5
+  Build-depends:  yesod
+
+  Main-is:        Main.hs
