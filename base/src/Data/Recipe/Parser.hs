@@ -76,4 +76,3 @@ stringP = p <?> "string"
                  s <- many $ noneOf $ q:"\n\t"
                  char q
                  return s
-
