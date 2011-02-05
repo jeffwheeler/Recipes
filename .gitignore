@@ -1,4 +1,5 @@
 .swp
 *.swp
 dist/
-
+base/tests/*.html
+web/client_session_key.aes
